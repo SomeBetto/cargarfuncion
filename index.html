@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap & FontAwesome
+  <link rel="stylesheet" href="../../../ace_template/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../../ace_template/components/font-awesome/css/font-awesome.min.css">-->
+  <!-- Estilos de pagina -->
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Menu de la pagina -->
+  <nav class="bg-primary m-1 rounded" role="tabpanel">
+    <ul class="nav nav-tabs"  style="background-color: #4488AA;">
+      <li class="nav-item active">
+        <a class="nav-link active" role="tab" data-toggle="tab">Cargar archivo</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenido de la pagina -->
+  <main>
+    <table id="tblTitulo">
+      <tr>
+        <td style="width: 20%;" align="center">
+          <div class="card">
+            <label id="lblTraspasos" class="titulo">CARGA DE ARCHIVO</label>
+            <div class="py-1">
+            </div>
+            <form enctype="multipart/form-data">
+              <br>
+              <br>
+              <input type="file" id="subir" name="subir">
+              <br>
+              <button class="button2" style="margin-bottom: 10px;" type="button" id="btnCargar">CARGAR</button>
+            </form>
+          </div>
+
+        </div>
+      </tr>
+    </table>
+  </main>
+
+  <div class="bootbox modal" id="myModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+  </div>
+  </main>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Bootstrap 
+  <script src="../../../ace_template/components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+  <!-- Scripts propios de página  -->
+  <script src="js/modal.js"></script>
+  <script src="js/cargar.js"></script>
+</body>
+
+</html>
